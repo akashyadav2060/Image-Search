@@ -1,5 +1,4 @@
-const ACCESS_KEY = "wbiC4OLLECSekdC_SQzYx6XvDgCYWvcpOKl1LabNYyU";
-const SECRET_KEY = "3s4Iv_zQUPhFznKaKf4H5TDu7O2SV2f8ElnUpNlaQGM";
+
 
 document.querySelector('form').addEventListener('submit',async function(event){
     event.preventDefault();
