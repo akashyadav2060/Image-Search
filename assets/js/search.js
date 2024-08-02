@@ -15,5 +15,5 @@ export default async function search(query){
         console.log({imageUrl});
     }
     document.querySelector('.images').innerHTML = imageElements;
-    console.log({data});
+
 };
