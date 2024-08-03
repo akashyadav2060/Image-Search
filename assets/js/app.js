@@ -1,7 +1,7 @@
 
 import populateLabels from './labels.js';
 import search from'./search.js';
-import {getCookie} from './cookies.js'
+import { getQuery } from './localstorage.js';
 populateLabels();
 document.querySelector('form').addEventListener('submit',async function(event){
     event.preventDefault();
@@ -12,6 +12,10 @@ document.querySelector('form').addEventListener('submit',async function(event){
     
 });
 (async() => {
-    const query = getCookie();
+    const query = getQuery();
     await search(query);
 })()
+
+Fancybox.bind("[data-fancybox]", {
+    
+});
