@@ -12,7 +12,9 @@ export default async function search(query){
     
     for(let image of images){
         const imageUrl = image.urls.regular;
-        imageElements += `<a href="${imageUrl}" data-fancybox="gallery"><img src="${imageUrl}" alt=""></a>`;
+        imageElements += `
+        <a href="${imageUrl}" data-fancybox="gallery"><img src="${imageUrl}" alt=""></a>
+        `;
         
     }
     document.querySelector('.images').innerHTML = imageElements;
